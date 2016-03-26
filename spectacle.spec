@@ -1,7 +1,7 @@
 Summary:	The new screenshot capture utility, replaces KSnapshot
 Name:		spectacle
 Version:	15.12.3
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		System/Base
 URL:		https://www.kde.org/
@@ -16,7 +16,7 @@ BuildRequires:	pkgconfig(xcb-xfixes)
 BuildRequires:	pkgconfig(xcb-image)
 BuildRequires:	pkgconfig(xcb-util)
 BuildRequires:	pkgconfig(xcb-cursor)
-BuildRequires:	cmake(KF5Screen)
+BuildRequires:	cmake(KF5Screen) >= 5.6.0-2
 BuildRequires:	cmake(KF5CoreAddons)
 BuildRequires:	cmake(KF5WidgetsAddons)
 BuildRequires:	cmake(KF5DBusAddons)
