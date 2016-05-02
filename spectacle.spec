@@ -30,6 +30,7 @@ BuildRequires:	cmake(KF5DocTools)
 BuildRequires:	cmake(KF5Kipi)
 BuildRequires:	cmake(Qt5Quick)
 BuildRequires:	cmake(KF5Declarative)
+BuildRequires:	cmake(KF5Kipi)
 Obsoletes:	ksnapshot < 2:15.12.0
 Provides:	ksnapshot = 2:15.12.0
 Obsoletes:	ksnapshot-handbook < 2:15.12.0
