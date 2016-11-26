@@ -43,6 +43,7 @@ The new screenshot capture utility, replaces KSnapshot.
 %doc %{_docdir}/HTML/en/spectacle
 %{_bindir}/spectacle
 %{_datadir}/applications/org.kde.spectacle.desktop
+%{_datadir}/metainfo/org.kde.spectacle.appdata.xml
 %{_datadir}/dbus-1/interfaces/org.kde.Spectacle.xml
 %{_datadir}/dbus-1/services/org.kde.Spectacle.service
 %{_iconsdir}/*/*/*/*
