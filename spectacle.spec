@@ -1,6 +1,6 @@
 Summary:	The new screenshot capture utility, replaces KSnapshot
 Name:		spectacle
-Version:	17.04.1
+Version:	17.04.2
 Release:	1
 License:	GPLv2+
 Group:		System/Base
