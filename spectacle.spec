@@ -1,6 +1,6 @@
 Summary:	The new screenshot capture utility, replaces KSnapshot
 Name:		spectacle
-Version:	17.04.3
+Version:	17.07.90
 Release:	1
 License:	GPLv2+
 Group:		System/Base
@@ -50,14 +50,6 @@ The new screenshot capture utility, replaces KSnapshot.
 %{_iconsdir}/*/*/*/*
 %{_datadir}/khotkeys/spectacle.khotkeys
 %{_datadir}/knotifications5/spectacle.notifyrc
-%doc %{_docdir}/HTML/en/spectacle
-%lang(ca) %doc %{_docdir}/HTML/ca/spectacle
-%lang(es) %doc %{_docdir}/HTML/es/spectacle
-%lang(it) %doc %{_docdir}/HTML/it/spectacle
-%lang(nl) %doc %{_docdir}/HTML/nl/spectacle
-%lang(pt_BR) %doc %{_docdir}/HTML/pt_BR/spectacle
-%lang(sv) %doc %{_docdir}/HTML/sv/spectacle
-%lang(uk) %doc %{_docdir}/HTML/uk/spectacle
 
 #--------------------------------------------------------------------
 
@@ -71,4 +63,4 @@ The new screenshot capture utility, replaces KSnapshot.
 
 %install
 %ninja_install -C build
-%find_lang %{name}
+%find_lang %{name} --with-html
