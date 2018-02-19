@@ -1,2 +1,4 @@
+removed_sources:
+  spectacle-17.12.1.tar.xz: 7046575bcfc396438ea230cff3b575f9c9705b89
 sources:
-  spectacle-17.04.0.tar.xz: c0e5cc53d65fc4df732453558627803164c661a2
+  spectacle-17.12.2.tar.xz: dc212be6826c74d38a8454172386bd0f7b14622c
