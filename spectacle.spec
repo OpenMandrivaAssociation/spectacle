@@ -1,7 +1,7 @@
 Summary:	The new screenshot capture utility, replaces KSnapshot
 Name:		spectacle
-Version:	 18.08.2
-Release:	2
+Version:	 18.08.3
+Release:	1
 License:	GPLv2+
 Group:		System/Base
 URL:		https://www.kde.org/
