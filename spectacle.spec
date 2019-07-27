@@ -1,6 +1,6 @@
 Summary:	The new screenshot capture utility, replaces KSnapshot
 Name:		spectacle
-Version:	19.04.3
+Version:	19.07.80
 Release:	1
 License:	GPLv2+
 Group:		System/Base
@@ -44,15 +44,17 @@ Provides:	ksnapshot-handbook = 2:15.12.0
 The new screenshot capture utility, replaces KSnapshot.
 
 %files -f %{name}.lang
-%{_sysconfdir}/xdg/spectacle.categories
+%{_datadir}/qlogging-categories5/spectacle.categories
 %{_bindir}/spectacle
 %{_datadir}/applications/org.kde.spectacle.desktop
 %{_datadir}/metainfo/org.kde.spectacle.appdata.xml
 %{_datadir}/dbus-1/interfaces/org.kde.Spectacle.xml
 %{_datadir}/dbus-1/services/org.kde.Spectacle.service
 %{_iconsdir}/*/*/*/*
-%{_datadir}/khotkeys/spectacle.khotkeys
 %{_datadir}/knotifications5/spectacle.notifyrc
+%{_libdir}/kconf_update_bin/spectacle-migrate-shortcuts
+%{_datadir}/kconf_update/spectacle_shortcuts.upd
+%{_datadir}/kglobalaccel/org.kde.spectacle.desktop
 
 #--------------------------------------------------------------------
 
