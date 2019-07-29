@@ -35,6 +35,7 @@ BuildRequires:	cmake(KF5Kipi)
 BuildRequires:	cmake(Qt5Quick)
 BuildRequires:	cmake(KF5Declarative)
 BuildRequires:	cmake(KF5Kipi)
+BuildRequires:	cmake(KF5GlobalAccel)
 BuildRequires:	cmake(KDEExperimentalPurpose)
 Obsoletes:	ksnapshot < 2:15.12.0
 Provides:	ksnapshot = 2:15.12.0
