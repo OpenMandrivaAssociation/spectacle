@@ -1,7 +1,7 @@
 Summary:	The new screenshot capture utility, replaces KSnapshot
 Name:		spectacle
 Version:	19.08.1
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		System/Base
 URL:		https://www.kde.org/
@@ -41,6 +41,8 @@ Obsoletes:	ksnapshot < 2:15.12.0
 Provides:	ksnapshot = 2:15.12.0
 Obsoletes:	ksnapshot-handbook < 2:15.12.0
 Provides:	ksnapshot-handbook = 2:15.12.0
+# For /usr/bin/qdbus
+Requires:	qtchooser
 
 %description
 The new screenshot capture utility, replaces KSnapshot.
