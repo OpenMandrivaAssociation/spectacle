@@ -42,7 +42,7 @@ Provides:	ksnapshot = 2:15.12.0
 Obsoletes:	ksnapshot-handbook < 2:15.12.0
 Provides:	ksnapshot-handbook = 2:15.12.0
 # For /usr/bin/qdbus
-Requires:	qtchooser
+Requires:	qt5-qttools-qtdbus
 
 %description
 The new screenshot capture utility, replaces KSnapshot.
@@ -64,7 +64,7 @@ The new screenshot capture utility, replaces KSnapshot.
 
 
 %prep
-%setup -q
+%autosetup -p1
 %cmake_kde5
 
 %build
