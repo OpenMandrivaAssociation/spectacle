@@ -1,6 +1,6 @@
 Summary:	The new screenshot capture utility, replaces KSnapshot
 Name:		spectacle
-Version:	20.11.80
+Version:	20.11.90
 Release:	1
 License:	GPLv2+
 Group:		System/Base
