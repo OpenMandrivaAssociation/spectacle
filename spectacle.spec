@@ -1,7 +1,7 @@
 Summary:	The new screenshot capture utility, replaces KSnapshot
 Name:		spectacle
 Version:	20.12.1
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		System/Base
 URL:		https://www.kde.org/
@@ -39,6 +39,7 @@ BuildRequires:	cmake(KF5Kipi)
 BuildRequires:	cmake(KF5GlobalAccel)
 BuildRequires:	cmake(KDEExperimentalPurpose)
 BuildRequires:	cmake(KF5Wayland)
+BuildRequires:	cmake(kImageAnnotator)
 Obsoletes:	ksnapshot < 2:15.12.0
 Provides:	ksnapshot = 2:15.12.0
 Obsoletes:	ksnapshot-handbook < 2:15.12.0
@@ -65,7 +66,6 @@ The new screenshot capture utility, replaces KSnapshot.
 %{_prefix}/lib/systemd/user/app-org.kde.spectacle.service
 
 #--------------------------------------------------------------------
-
 
 %prep
 %autosetup -p1
