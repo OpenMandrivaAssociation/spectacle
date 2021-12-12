@@ -1,6 +1,6 @@
 Summary:	The new screenshot capture utility, replaces KSnapshot
 Name:		spectacle
-Version:	21.08.3
+Version:	21.12.0
 Release:	1
 License:	GPLv2+
 Group:		System/Base
@@ -61,6 +61,8 @@ The new screenshot capture utility, replaces KSnapshot.
 %{_iconsdir}/*/*/*/*
 %{_datadir}/knotifications5/spectacle.notifyrc
 %{_libdir}/kconf_update_bin/spectacle-migrate-shortcuts
+%{_libdir}/kconf_update_bin/spectacle-migrate-rememberregion
+%{_datadir}/kconf_update/spectacle_rememberregion.upd
 %{_datadir}/kconf_update/spectacle_newConfig.upd
 %{_datadir}/kconf_update/spectacle_shortcuts.upd
 %{_datadir}/kconf_update/50-clipboard_settings_change.py
