@@ -43,6 +43,7 @@ BuildRequires:	cmake(KF5Wayland)
 BuildRequires:	cmake(kImageAnnotator)
 BuildRequires:	cmake(kColorPicker)
 BuildRequires:	cmake(KF5Kirigami2)
+BuildRequires:	cmake(PlasmaWaylandProtocols)
 Obsoletes:	ksnapshot < 2:15.12.0
 Provides:	ksnapshot = 2:15.12.0
 Obsoletes:	ksnapshot-handbook < 2:15.12.0
