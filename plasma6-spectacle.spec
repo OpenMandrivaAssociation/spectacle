@@ -42,7 +42,7 @@ BuildRequires:	cmake(KF6Kirigami2)
 BuildRequires:	cmake(PlasmaWaylandProtocols)
 BuildRequires:	cmake(LayerShellQt) >= 5.27.80
 BuildRequires:	cmake(KPipeWire) >= 5.27.60
-BuildRequires:	pkgconfig(pipewire-0.3)
+BuildRequires:	pkgconfig(libpipewire-0.3)
 # For /usr/bin/qdbus
 Requires:	qt6-qttools-qtdbus
 
