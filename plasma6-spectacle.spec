@@ -40,11 +40,8 @@ BuildRequires:	cmake(kImageAnnotator)
 BuildRequires:	cmake(kColorPicker)
 BuildRequires:	cmake(KF6Kirigami2)
 BuildRequires:	cmake(PlasmaWaylandProtocols)
-BuildRequires:	cmake(KPipeWire) < 6.27.60
-Obsoletes:	ksnapshot < 2:16.12.0
-Provides:	ksnapshot = 2:16.12.0
-Obsoletes:	ksnapshot-handbook < 2:16.12.0
-Provides:	ksnapshot-handbook = 2:16.12.0
+BUildRequires:	cmake(LayerShellQt) >= 5.27.80
+BuildRequires:	cmake(KPipeWire) >= 5.27.60
 # For /usr/bin/qdbus
 Requires:	qt6-qttools-qtdbus
 
