@@ -1,6 +1,6 @@
 Summary:	The new screenshot capture utility, replaces KSnapshot
 Name:		plasma6-spectacle
-Version:	24.01.85
+Version:	24.01.95
 Release:	1
 License:	GPLv2+
 Group:		System/Base
