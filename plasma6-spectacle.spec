@@ -1,9 +1,9 @@
-%define git 20240217
+#define git 20240217
 %define gitbranch release/24.02
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Summary:	The new screenshot capture utility, replaces KSnapshot
 Name:		plasma6-spectacle
-Version:	24.01.96
+Version:	24.02.0
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		System/Base
@@ -43,8 +43,8 @@ BuildRequires:	cmake(Qt6Quick)
 BuildRequires:	cmake(Qt6Multimedia)
 BuildRequires:	cmake(KF6Declarative)
 BuildRequires:	cmake(KF6GlobalAccel)
-BuildRequires:	cmake(kImageAnnotator)
-BuildRequires:	cmake(kColorPicker)
+BuildRequires:	cmake(kImageAnnotator-Qt6)
+BuildRequires:	cmake(kColorPicker-Qt6)
 BuildRequires:	cmake(KF6Kirigami2)
 BuildRequires:	cmake(PlasmaWaylandProtocols)
 BuildRequires:	cmake(LayerShellQt) >= 5.27.80
