@@ -50,6 +50,7 @@ BuildRequires:	cmake(PlasmaWaylandProtocols)
 BuildRequires:	cmake(LayerShellQt) >= 5.27.80
 BuildRequires:	cmake(KPipeWire) >= 5.27.60
 BuildRequires:	pkgconfig(libpipewire-0.3)
+BuildRequires:	cmake(ZXing)
 # For /usr/bin/qdbus
 Requires:	qt6-qttools-dbus
 
