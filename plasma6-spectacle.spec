@@ -3,7 +3,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Summary:	The new screenshot capture utility, replaces KSnapshot
 Name:		plasma6-spectacle
-Version:	24.08.1
+Version:	24.08.2
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		System/Base
@@ -59,6 +59,9 @@ Requires:	qt6-qttools-dbus
 
 %description
 The new screenshot capture utility, replaces KSnapshot.
+
+%patchlist
+spectacle-24.08.2-qt-6.8-workaround.patch
 
 %files -f spectacle.lang
 %{_datadir}/qlogging-categories6/spectacle.categories

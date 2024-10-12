@@ -1,0 +1,12 @@
+diff -up spectacle-24.08.2/src/CMakeLists.txt.omv~ spectacle-24.08.2/src/CMakeLists.txt
+--- spectacle-24.08.2/src/CMakeLists.txt.omv~	2024-10-12 04:55:08.651010347 +0200
++++ spectacle-24.08.2/src/CMakeLists.txt	2024-10-12 04:55:29.961221447 +0200
+@@ -16,6 +16,8 @@ ecm_qt_declare_logging_category(SPECTACL
+     EXPORT SPECTACLE
+ )
+ 
++add_definitions(-UQT_NO_CAST_FROM_ASCII)
++
+ add_executable(spectacle
+     ${SPECTACLE_SRCS}
+     Main.cpp
