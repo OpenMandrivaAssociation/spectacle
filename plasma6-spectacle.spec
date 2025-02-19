@@ -3,7 +3,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Summary:	The new screenshot capture utility, replaces KSnapshot
 Name:		plasma6-spectacle
-Version:	24.12.2
+Version:	6.3.1.2
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		System/Base
@@ -12,7 +12,7 @@ URL:		https://www.kde.org/
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/graphics/spectacle/-/archive/%{gitbranch}/spectacle-%{gitbranchd}.tar.bz2#/spectacle-%{git}.tar.bz2
 %else
-Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/spectacle-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/plasma/%(echo %{version} |cut -d. -f1-3)/spectacle-%{version}.tar.xz
 %endif
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt6)
@@ -61,7 +61,6 @@ Requires:	qt6-qttools-dbus
 The new screenshot capture utility, replaces KSnapshot.
 
 %patchlist
-spectacle-24.08.2-qt-6.8-workaround.patch
 
 %files -f spectacle.lang
 %{_datadir}/qlogging-categories6/spectacle.categories
