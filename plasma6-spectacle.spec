@@ -3,7 +3,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Summary:	The new screenshot capture utility, replaces KSnapshot
 Name:		plasma6-spectacle
-Version:	6.3.2
+Version:	6.3.2.1
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		System/Base
@@ -81,7 +81,7 @@ The new screenshot capture utility, replaces KSnapshot.
 #--------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n spectacle-%{?git:%{gitbranchd}}%{!?git:%{version}}
+%autosetup -p1 -n spectacle-%(echo %{?git:%{gitbranchd}}%{!?git:%{version}} |cut -d. -f1-3)
 %cmake \
 	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
 	-G Ninja
