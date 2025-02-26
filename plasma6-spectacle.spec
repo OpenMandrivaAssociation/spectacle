@@ -54,6 +54,7 @@ BuildRequires:	cmake(LayerShellQt) >= 5.27.80
 BuildRequires:	cmake(KPipeWire) >= 5.27.60
 BuildRequires:	pkgconfig(libpipewire-0.3)
 BuildRequires:	pkgconfig(wayland-client)
+BuildRequires:	pkgconfig(xkbcommon)
 BuildRequires:	cmake(ZXing)
 BuildRequires:	cmake(OpenCV)
 # For /usr/bin/qdbus
