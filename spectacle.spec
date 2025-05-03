@@ -2,9 +2,9 @@
 %define gitbranch release/24.02
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Summary:	The new screenshot capture utility, replaces KSnapshot
-Name:		plasma6-spectacle
+Name:		spectacle
 Version:	6.3.4
-Release:	%{?git:0.%{git}.}1
+Release:	%{?git:0.%{git}.}2
 License:	GPLv2+
 Group:		System/Base
 URL:		https://www.kde.org/
@@ -59,13 +59,18 @@ BuildRequires:	cmake(ZXing)
 BuildRequires:	cmake(OpenCV)
 # For /usr/bin/qdbus
 Requires:	qt6-qttools-dbus
+# Renamed after 6.0 2025-05-03
+%rename plasma6-spectacle
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
 
 %description
 The new screenshot capture utility, replaces KSnapshot.
 
 %patchlist
 
-%files -f spectacle.lang
+%files -f %{name}.lang
 %{_datadir}/qlogging-categories6/spectacle.categories
 %{_bindir}/spectacle
 %{_datadir}/applications/org.kde.spectacle.desktop
@@ -80,18 +85,3 @@ The new screenshot capture utility, replaces KSnapshot.
 %{_datadir}/kconf_update/*
 %{_datadir}/dbus-1/services/org.kde.spectacle.service
 %{_prefix}/lib/systemd/user/app-org.kde.spectacle.service
-
-#--------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n spectacle-%(echo %{?git:%{gitbranchd}}%{!?git:%{version}} |cut -d. -f1-3)
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-%find_lang spectacle --with-html --with-man
