@@ -3,8 +3,8 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Summary:	The new screenshot capture utility, replaces KSnapshot
 Name:		spectacle
-Version:	6.4.2
-Release:	%{?git:0.%{git}.}2
+Version:	6.4.4
+Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		System/Base
 URL:		https://www.kde.org/
