@@ -57,6 +57,7 @@ BuildRequires:	cmake(KPipeWire) >= 5.27.60
 BuildRequires:	pkgconfig(libpipewire-0.3)
 BuildRequires:	pkgconfig(wayland-client)
 BuildRequires:	pkgconfig(xkbcommon)
+BuildRequires:	pkgconfig(tesseract)
 BuildRequires:	cmake(ZXing)
 BuildRequires:	cmake(OpenCV)
 # For /usr/bin/qdbus
