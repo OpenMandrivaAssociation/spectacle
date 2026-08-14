@@ -1,0 +1,12 @@
+diff -ruN a/CMakeLists.txt spectacle/CMakeLists.txt
+--- a/CMakeLists.txt	2026-07-14 13:03:34.000000000 +0200
++++ b/CMakeLists.txt	2026-08-14 19:24:42.918653129 +0200
+@@ -91,7 +91,7 @@
+ find_package(PlasmaWaylandProtocols REQUIRED)
+ find_package(LayerShellQt REQUIRED)
+ find_package(KPipeWire)
+-find_package(OpenCV 4.7 REQUIRED core imgproc)
++find_package(OpenCV REQUIRED COMPONENTS core imgproc)
+ find_package(PkgConfig REQUIRED)
+ 
+ set_package_properties(KPipeWire PROPERTIES DESCRIPTION

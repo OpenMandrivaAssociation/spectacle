@@ -4,7 +4,7 @@
 Summary:	The new screenshot capture utility, replaces KSnapshot
 Name:		spectacle
 Version:	6.7.3
-Release:	%{?git:0.%{git}.}1
+Release:	%{?git:0.%{git}.}2
 License:	GPLv2+
 Group:		System/Base
 URL:		https://www.kde.org/
@@ -14,6 +14,7 @@ Source0:	https://invent.kde.org/graphics/spectacle/-/archive/%{gitbranch}/specta
 %else
 Source0:	http://download.kde.org/%{stable}/plasma/%(echo %{version} |cut -d. -f1-3)/spectacle-%{version}.tar.xz
 %endif
+Patch0:		spectacle-opencv5.patch
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt6)
 BuildRequires:	cmake(Qt6Core)
