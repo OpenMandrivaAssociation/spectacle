@@ -3,8 +3,8 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Summary:	The new screenshot capture utility, replaces KSnapshot
 Name:		spectacle
-Version:	6.7.5
-Release:	%{?git:0.%{git}.}3
+Version:	6.8.0
+Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		System/Base
 URL:		https://www.kde.org/
@@ -14,7 +14,6 @@ Source0:	https://invent.kde.org/graphics/spectacle/-/archive/%{gitbranch}/specta
 %else
 Source0:	http://download.kde.org/%{stable}/plasma/%(echo %{version} |cut -d. -f1-3)/spectacle-%{version}.tar.xz
 %endif
-Patch0:		spectacle-opencv5.patch
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt6)
 BuildRequires:	cmake(Qt6Core)
@@ -60,7 +59,6 @@ BuildRequires:	pkgconfig(wayland-client)
 BuildRequires:	pkgconfig(xkbcommon)
 BuildRequires:	pkgconfig(tesseract)
 BuildRequires:	cmake(ZXing)
-BuildRequires:	cmake(OpenCV)
 # For /usr/bin/qdbus
 Requires:	qt6-qttools-dbus
 # Renamed after 6.0 2025-05-03
