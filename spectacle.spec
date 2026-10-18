@@ -74,6 +74,7 @@ The new screenshot capture utility, replaces KSnapshot.
 
 %files -f %{name}.lang
 %{_datadir}/qlogging-categories6/spectacle.categories
+%{_datadir}/config.kcfg/spectacle.kcfg
 %{_bindir}/spectacle
 %{_datadir}/applications/org.kde.spectacle.desktop
 %{_datadir}/metainfo/org.kde.spectacle.appdata.xml
