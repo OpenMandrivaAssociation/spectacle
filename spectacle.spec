@@ -50,7 +50,7 @@ BuildRequires:	cmake(kColorPicker-Qt6)
 BuildRequires:	cmake(KF6Kirigami2)
 BuildRequires:	cmake(PlasmaWaylandProtocols)
 BuildRequires:	cmake(Qt6WaylandClient)
-BuildRequires:	cmake(KQuickImageEditor)
+BuildRequires:	cmake(KQuickImageEditor) >= 0.7
 BuildRequires:	cmake(KF6Purpose)
 BuildRequires:	cmake(LayerShellQt) >= 5.27.80
 BuildRequires:	cmake(KPipeWire) >= 5.27.60
